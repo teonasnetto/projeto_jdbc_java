@@ -4,5 +4,20 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "d:\\THEO\\programing\\codigos\\Z_estudos_testes\\java-libs\\jdbc_connector\\mysql-connector-java-8.0.30.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "conn",
+            "database": "coursejdbc",
+            "username": "admin",
+            "password": "12345678"
+        }
     ]
 }

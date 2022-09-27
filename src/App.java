@@ -2,6 +2,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import model.dao.DaoFactory;
+import model.dao.DepartmentDao;
 import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
@@ -46,6 +47,17 @@ public class App {
         int id = sc.nextInt();
         sellerDao.deleteById(id);
         System.out.println("Delete completed");
+
+
+        DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
+
+
+        System.out.println("=== TEST 7: department findAll ===");
+        List<Department> list2 = departmentDao.findAll();
+        for (Department obj : list2) {
+            System.out.println(obj);
+        }
+
 
         sc.close();
 
